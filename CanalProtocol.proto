@@ -1,4 +1,0 @@
-enum PacketType {
-    // Other enum values...
-    ACK = 6;  // Ensure this value is present
-}
