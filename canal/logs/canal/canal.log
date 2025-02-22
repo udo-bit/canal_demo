@@ -1,0 +1,98 @@
+2025-02-22 14:44:51.701 [Thread-6] INFO  com.alibaba.otter.canal.deployer.CanalStarter - ## stop the canal server
+2025-02-22 14:44:51.701 [Thread-7] INFO  c.a.o.c.c.rabbitmq.producer.CanalRabbitMQProducer - ## Stop RabbitMQ producer##
+2025-02-22 14:44:51.702 [Thread-6] ERROR c.a.o.c.common.zookeeper.running.ServerRunningMonitor - processActiveExit failed
+java.lang.NullPointerException: null
+	at com.alibaba.otter.canal.server.CanalMQStarter$CanalMQRunnable.stop(CanalMQStarter.java:245)
+	at com.alibaba.otter.canal.server.CanalMQStarter.stopDestination(CanalMQStarter.java:128)
+	at com.alibaba.otter.canal.deployer.CanalController$1.processActiveExit(CanalController.java:179)
+	at com.alibaba.otter.canal.common.zookeeper.running.ServerRunningMonitor.processActiveExit(ServerRunningMonitor.java:254)
+	at com.alibaba.otter.canal.common.zookeeper.running.ServerRunningMonitor.stop(ServerRunningMonitor.java:133)
+	at com.alibaba.otter.canal.deployer.CanalController.stop(CanalController.java:585)
+	at com.alibaba.otter.canal.deployer.CanalStarter.lambda$start$0(CanalStarter.java:93)
+	at java.lang.Thread.run(Thread.java:750)
+2025-02-22 14:44:51.702 [Thread-6] INFO  com.alibaba.otter.canal.deployer.CanalController - ## stop the canal server[172.21.0.3(172.21.0.3):11111]
+2025-02-22 14:44:51.725 [Thread-6] INFO  com.alibaba.otter.canal.deployer.CanalStarter - ## canal server is down.
+2025-02-22 14:44:53.162 [main] INFO  com.alibaba.otter.canal.deployer.CanalLauncher - ## set default uncaught exception handler
+2025-02-22 14:44:53.165 [main] INFO  com.alibaba.otter.canal.deployer.CanalLauncher - ## load canal configurations
+2025-02-22 14:44:53.218 [main] INFO  com.alibaba.otter.canal.deployer.CanalStarter - ## start the canal server.
+2025-02-22 14:44:53.227 [main] INFO  com.alibaba.otter.canal.deployer.CanalController - ## start the canal server[172.21.0.3(172.21.0.3):11111]
+2025-02-22 14:44:53.667 [main] INFO  com.alibaba.otter.canal.deployer.CanalStarter - ## the canal server is running now ......
+2025-02-22 14:45:18.718 [canal-instance-scan-0] ERROR c.a.o.c.common.zookeeper.running.ServerRunningMonitor - processActiveExit failed
+java.lang.NullPointerException: null
+	at com.alibaba.otter.canal.server.CanalMQStarter$CanalMQRunnable.stop(CanalMQStarter.java:245)
+	at com.alibaba.otter.canal.server.CanalMQStarter.stopDestination(CanalMQStarter.java:128)
+	at com.alibaba.otter.canal.deployer.CanalController$1.processActiveExit(CanalController.java:179)
+	at com.alibaba.otter.canal.common.zookeeper.running.ServerRunningMonitor.processActiveExit(ServerRunningMonitor.java:254)
+	at com.alibaba.otter.canal.common.zookeeper.running.ServerRunningMonitor.stop(ServerRunningMonitor.java:133)
+	at com.alibaba.otter.canal.deployer.CanalController$2.stop(CanalController.java:267)
+	at com.alibaba.otter.canal.deployer.CanalController$2.reload(CanalController.java:276)
+	at com.alibaba.otter.canal.deployer.monitor.SpringInstanceConfigMonitor.notifyReload(SpringInstanceConfigMonitor.java:192)
+	at com.alibaba.otter.canal.deployer.monitor.SpringInstanceConfigMonitor.scan(SpringInstanceConfigMonitor.java:129)
+	at com.alibaba.otter.canal.deployer.monitor.SpringInstanceConfigMonitor.lambda$start$0(SpringInstanceConfigMonitor.java:55)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+2025-02-22 14:45:18.719 [canal-instance-scan-0] INFO  com.alibaba.otter.canal.deployer.CanalController - auto notify stop example successful.
+2025-02-22 14:45:18.758 [canal-instance-scan-0] INFO  com.alibaba.otter.canal.deployer.CanalController - auto notify start example successful.
+2025-02-22 14:45:18.759 [canal-instance-scan-0] INFO  com.alibaba.otter.canal.deployer.CanalController - auto notify reload example successful.
+2025-02-22 14:45:20.443 [Thread-6] INFO  com.alibaba.otter.canal.deployer.CanalStarter - ## stop the canal server
+2025-02-22 14:45:20.444 [Thread-7] INFO  c.a.o.c.c.rabbitmq.producer.CanalRabbitMQProducer - ## Stop RabbitMQ producer##
+2025-02-22 14:45:20.444 [Thread-6] ERROR c.a.o.c.common.zookeeper.running.ServerRunningMonitor - processActiveExit failed
+java.lang.NullPointerException: null
+	at com.alibaba.otter.canal.server.CanalMQStarter$CanalMQRunnable.stop(CanalMQStarter.java:245)
+	at com.alibaba.otter.canal.server.CanalMQStarter.stopDestination(CanalMQStarter.java:128)
+	at com.alibaba.otter.canal.deployer.CanalController$1.processActiveExit(CanalController.java:179)
+	at com.alibaba.otter.canal.common.zookeeper.running.ServerRunningMonitor.processActiveExit(ServerRunningMonitor.java:254)
+	at com.alibaba.otter.canal.common.zookeeper.running.ServerRunningMonitor.stop(ServerRunningMonitor.java:133)
+	at com.alibaba.otter.canal.deployer.CanalController.stop(CanalController.java:585)
+	at com.alibaba.otter.canal.deployer.CanalStarter.lambda$start$0(CanalStarter.java:93)
+	at java.lang.Thread.run(Thread.java:750)
+2025-02-22 14:45:20.444 [Thread-6] INFO  com.alibaba.otter.canal.deployer.CanalController - ## stop the canal server[172.21.0.3(172.21.0.3):11111]
+2025-02-22 14:45:20.926 [Thread-6] INFO  com.alibaba.otter.canal.deployer.CanalStarter - ## canal server is down.
+2025-02-22 14:45:21.872 [main] INFO  com.alibaba.otter.canal.deployer.CanalLauncher - ## set default uncaught exception handler
+2025-02-22 14:45:21.876 [main] INFO  com.alibaba.otter.canal.deployer.CanalLauncher - ## load canal configurations
+2025-02-22 14:45:21.934 [main] INFO  com.alibaba.otter.canal.deployer.CanalStarter - ## start the canal server.
+2025-02-22 14:45:21.943 [main] INFO  com.alibaba.otter.canal.deployer.CanalController - ## start the canal server[172.21.0.3(172.21.0.3):11111]
+2025-02-22 14:45:22.402 [main] INFO  com.alibaba.otter.canal.deployer.CanalStarter - ## the canal server is running now ......
+2025-02-22 15:21:43.953 [Thread-6] INFO  com.alibaba.otter.canal.deployer.CanalStarter - ## stop the canal server
+2025-02-22 15:21:43.953 [Thread-7] INFO  c.a.o.c.c.rabbitmq.producer.CanalRabbitMQProducer - ## Stop RabbitMQ producer##
+2025-02-22 15:21:43.955 [Thread-6] ERROR c.a.o.c.common.zookeeper.running.ServerRunningMonitor - processActiveExit failed
+java.lang.NullPointerException: null
+	at com.alibaba.otter.canal.server.CanalMQStarter$CanalMQRunnable.stop(CanalMQStarter.java:245)
+	at com.alibaba.otter.canal.server.CanalMQStarter.stopDestination(CanalMQStarter.java:128)
+	at com.alibaba.otter.canal.deployer.CanalController$1.processActiveExit(CanalController.java:179)
+	at com.alibaba.otter.canal.common.zookeeper.running.ServerRunningMonitor.processActiveExit(ServerRunningMonitor.java:254)
+	at com.alibaba.otter.canal.common.zookeeper.running.ServerRunningMonitor.stop(ServerRunningMonitor.java:133)
+	at com.alibaba.otter.canal.deployer.CanalController.stop(CanalController.java:585)
+	at com.alibaba.otter.canal.deployer.CanalStarter.lambda$start$0(CanalStarter.java:93)
+	at java.lang.Thread.run(Thread.java:750)
+2025-02-22 15:21:43.955 [Thread-6] INFO  com.alibaba.otter.canal.deployer.CanalController - ## stop the canal server[172.21.0.3(172.21.0.3):11111]
+2025-02-22 15:21:43.969 [Thread-6] INFO  com.alibaba.otter.canal.deployer.CanalStarter - ## canal server is down.
+2025-02-22 15:21:45.406 [main] INFO  com.alibaba.otter.canal.deployer.CanalLauncher - ## set default uncaught exception handler
+2025-02-22 15:21:45.409 [main] INFO  com.alibaba.otter.canal.deployer.CanalLauncher - ## load canal configurations
+2025-02-22 15:21:45.458 [main] INFO  com.alibaba.otter.canal.deployer.CanalStarter - ## start the canal server.
+2025-02-22 15:21:45.467 [main] INFO  com.alibaba.otter.canal.deployer.CanalController - ## start the canal server[0.0.0.0(0.0.0.0):11111]
+2025-02-22 15:21:45.906 [main] INFO  com.alibaba.otter.canal.deployer.CanalStarter - ## the canal server is running now ......
+2025-02-22 15:29:26.503 [Thread-6] INFO  com.alibaba.otter.canal.deployer.CanalStarter - ## stop the canal server
+2025-02-22 15:29:26.503 [Thread-7] INFO  c.a.o.c.c.rabbitmq.producer.CanalRabbitMQProducer - ## Stop RabbitMQ producer##
+2025-02-22 15:29:26.504 [Thread-6] ERROR c.a.o.c.common.zookeeper.running.ServerRunningMonitor - processActiveExit failed
+java.lang.NullPointerException: null
+	at com.alibaba.otter.canal.server.CanalMQStarter$CanalMQRunnable.stop(CanalMQStarter.java:245)
+	at com.alibaba.otter.canal.server.CanalMQStarter.stopDestination(CanalMQStarter.java:128)
+	at com.alibaba.otter.canal.deployer.CanalController$1.processActiveExit(CanalController.java:179)
+	at com.alibaba.otter.canal.common.zookeeper.running.ServerRunningMonitor.processActiveExit(ServerRunningMonitor.java:254)
+	at com.alibaba.otter.canal.common.zookeeper.running.ServerRunningMonitor.stop(ServerRunningMonitor.java:133)
+	at com.alibaba.otter.canal.deployer.CanalController.stop(CanalController.java:585)
+	at com.alibaba.otter.canal.deployer.CanalStarter.lambda$start$0(CanalStarter.java:93)
+	at java.lang.Thread.run(Thread.java:750)
+2025-02-22 15:29:26.505 [Thread-6] INFO  com.alibaba.otter.canal.deployer.CanalController - ## stop the canal server[0.0.0.0(0.0.0.0):11111]
+2025-02-22 15:29:27.190 [Thread-6] INFO  com.alibaba.otter.canal.deployer.CanalStarter - ## canal server is down.
+2025-02-22 15:29:28.941 [main] INFO  com.alibaba.otter.canal.deployer.CanalLauncher - ## set default uncaught exception handler
+2025-02-22 15:29:28.945 [main] INFO  com.alibaba.otter.canal.deployer.CanalLauncher - ## load canal configurations
+2025-02-22 15:29:28.949 [main] INFO  com.alibaba.otter.canal.deployer.CanalStarter - ## start the canal server.
+2025-02-22 15:29:28.964 [main] INFO  com.alibaba.otter.canal.deployer.CanalController - ## start the canal server[0.0.0.0(0.0.0.0):11111]
+2025-02-22 15:29:29.418 [main] INFO  com.alibaba.otter.canal.deployer.CanalStarter - ## the canal server is running now ......

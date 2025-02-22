@@ -1,0 +1,31 @@
+version: '3.7'
+
+services:
+  canal-server:
+    image: canal/canal-server:latest
+    container_name: canal-server
+    ports:
+      - "11111:11111"
+    volumes:
+      - ./canal/conf/canal.properties:/home/admin/canal-server/conf/canal.properties
+      - ./canal/conf/instance.properties:/home/admin/canal-server/conf/example/instance.properties
+      - ./canal/logs:/home/admin/canal-server/logs
+    networks:
+      - canal
+
+  mysql:
+    image: mysql:8.0.41
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3307:3306"
+    volumes:
+      - ./db/data:/var/lib/mysql
+      - ./db/conf.d:/etc/mysql/conf.d
+    networks:
+      - canal
+
+networks:
+  canal:
+    driver: bridge
